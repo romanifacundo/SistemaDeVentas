@@ -12,5 +12,6 @@ namespace SistemaDeVentas.Infraestructure.RepositoriesContracts
     {
         public ICollection<Producto> getAll();
 
+        public Producto getProducto(int Id);
     }
 }

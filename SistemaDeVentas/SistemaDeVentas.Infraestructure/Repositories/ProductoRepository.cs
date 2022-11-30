@@ -21,8 +21,14 @@ namespace SistemaDeVentas.Infraestructure.Repositories
 
         public ICollection<Producto> getAll()
         {
-            //ICollection<Producto> listaProductos = 
             return _context.Productos.ToList(); 
+        }
+
+        public Producto getProducto(int Id) 
+        {
+            Producto? producto = _context.Productos.FirstOrDefault(x => x.Id == Id);
+      
+            return producto;
         }
     }
 }

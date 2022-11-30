@@ -1351,6 +1351,22 @@
           }
         }
       },
+      "SistemaDeVentas.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0",
+          "SistemaDeVentas.DomainEntities": "1.0.0",
+          "SistemaDeVentas.Infraestructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SistemaDeVentas.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SistemaDeVentas.Application.dll": {}
+        }
+      },
       "SistemaDeVentas.DomainEntities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -4354,6 +4370,11 @@
         "version.txt"
       ]
     },
+    "SistemaDeVentas.Application/1.0.0": {
+      "type": "project",
+      "path": "../SistemaDeVentas.Application/SistemaDeVentas.Application.csproj",
+      "msbuildProject": "../SistemaDeVentas.Application/SistemaDeVentas.Application.csproj"
+    },
     "SistemaDeVentas.DomainEntities/1.0.0": {
       "type": "project",
       "path": "../SistemaDeVentas.DomainEntities/SistemaDeVentas.DomainEntities.csproj",
@@ -4371,6 +4392,7 @@
       "Microsoft.EntityFrameworkCore.Design >= 7.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.0",
+      "SistemaDeVentas.Application >= 1.0.0",
       "SistemaDeVentas.Infraestructure >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
@@ -4402,6 +4424,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Application\\SistemaDeVentas.Application.csproj": {
+              "projectPath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Application\\SistemaDeVentas.Application.csproj"
+            },
             "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Infraestructure\\SistemaDeVentas.Infraestructure.csproj": {
               "projectPath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Infraestructure\\SistemaDeVentas.Infraestructure.csproj"
             }
