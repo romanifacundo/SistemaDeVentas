@@ -12,3 +12,6 @@ C:\Facundo\Programación\Repositorio GitHub\SistemaDeVentas\SistemaDeVentas\Sist
 C:\Facundo\Programación\Repositorio GitHub\SistemaDeVentas\SistemaDeVentas\SistemaDeVentas.Infraestructure\obj\Debug\net6.0\SistemaDeVentas.Infraestructure.pdb
 C:\Facundo\Programación\Repositorio GitHub\SistemaDeVentas\SistemaDeVentas\SistemaDeVentas.Infraestructure\obj\Debug\net6.0\SistemaDeVentas.Infraestructure.genruntimeconfig.cache
 C:\Facundo\Programación\Repositorio GitHub\SistemaDeVentas\SistemaDeVentas\SistemaDeVentas.Infraestructure\obj\Debug\net6.0\ref\SistemaDeVentas.Infraestructure.dll
+C:\Facundo\Programación\Repositorio GitHub\SistemaDeVentas\SistemaDeVentas\SistemaDeVentas.Infraestructure\obj\Debug\net6.0\SistemaDeVentas.Infraestructure.csproj.CopyComplete
+C:\Facundo\Programación\Repositorio GitHub\SistemaDeVentas\SistemaDeVentas\SistemaDeVentas.Infraestructure\bin\Debug\net6.0\SistemaDeVentas.DomainEntities.dll
+C:\Facundo\Programación\Repositorio GitHub\SistemaDeVentas\SistemaDeVentas\SistemaDeVentas.Infraestructure\bin\Debug\net6.0\SistemaDeVentas.DomainEntities.pdb

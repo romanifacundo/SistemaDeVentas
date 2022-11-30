@@ -20,8 +20,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\SistemaDeVentas.Infraestructure\SistemaDeVentas.Infraestructure.csproj" />
-  </ItemGroup>
-
 </Project>

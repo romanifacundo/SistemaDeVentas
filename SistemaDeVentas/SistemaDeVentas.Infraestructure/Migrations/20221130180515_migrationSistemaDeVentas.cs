@@ -3,10 +3,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace SistemaDeVentas.DomainEntities.Migrations
+namespace SistemaDeVentas.Infraestructure.Migrations
 {
     /// <inheritdoc />
-    public partial class VentaDB : Migration
+    public partial class migrationSistemaDeVentas : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

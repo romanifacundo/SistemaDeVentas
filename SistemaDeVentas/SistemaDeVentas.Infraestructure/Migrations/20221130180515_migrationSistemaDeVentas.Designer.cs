@@ -3,17 +3,20 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SistemaDeVentas.Infraestructure;
 
 #nullable disable
 
-namespace SistemaDeVentas.DomainEntities.Migrations
+namespace SistemaDeVentas.Infraestructure.Migrations
 {
     [DbContext(typeof(DbContextSistema))]
-    partial class DbContextSistemaModelSnapshot : ModelSnapshot
+    [Migration("20221130180515_migrationSistemaDeVentas")]
+    partial class migrationSistemaDeVentas
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

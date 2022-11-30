@@ -6,15 +6,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace SistemaDeVentas.Infraestructure
 {
-    public class DbContextSistema: DbContext
+    public class DbContextSistema: DbContext 
     {
         public DbContextSistema(DbContextOptions<DbContextSistema> options) : base (options)
         {
 
         }
 
+        public DbSet<Cliente> Clientes { get; set; }
+        public DbSet<Factura> Facturas { get; set; }
+        public DbSet<Producto> Productos { get; set; }
+        public DbSet<Venta> Ventas { get; set; }
+       
+        
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Cliente>().ToTable("Cliente");
@@ -23,11 +30,6 @@ namespace SistemaDeVentas.Infraestructure
             modelBuilder.Entity<Venta>().ToTable("Venta");
         }
 
-
-        public DbSet<Cliente> Clientes { get; set; }
-        public DbSet<Factura> Facturas { get; set; }
-        public DbSet<Producto> Productos { get; set; }
-        public DbSet<Venta> Ventas { get; set; }
 
     }
 }

@@ -12,7 +12,7 @@
           "Microsoft.EntityFrameworkCore.Design": "7.0.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.0",
-          "SistemaDeVentas.DomainEntities": "1.0.0",
+          "SistemaDeVentas.Infraestructure": "1.0.0",
           "Swashbuckle.AspNetCore": "6.4.0"
         },
         "runtime": {
@@ -834,8 +834,7 @@
         "dependencies": {
           "EntityFramework": "6.4.4",
           "Microsoft.EntityFrameworkCore": "7.0.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0",
-          "SistemaDeVentas.Infraestructure": "1.0.0"
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0"
         },
         "runtime": {
           "SistemaDeVentas.DomainEntities.dll": {}
@@ -843,8 +842,10 @@
       },
       "SistemaDeVentas.Infraestructure/1.0.0": {
         "dependencies": {
+          "EntityFramework": "6.4.4",
           "Microsoft.EntityFrameworkCore": "7.0.0",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0"
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.0",
+          "SistemaDeVentas.DomainEntities": "1.0.0"
         },
         "runtime": {
           "SistemaDeVentas.Infraestructure.dll": {}

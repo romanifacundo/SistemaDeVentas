@@ -1,5 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using SistemaDeVentas.Infraestructure;
+using SistemaDeVentas.Infraestructure.Repositories;
+using SistemaDeVentas.Infraestructure.RepositoriesContracts;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,20 +12,23 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// DBContext.
+//// DBContext.
 builder.Services.AddDbContext<DbContextSistema>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("SistemaConnection"));
 });
 
+//Servicios de Repository.
+builder.Services.AddScoped<IProductoRepository, ProductoRepository>(); 
+
 var app = builder.Build();
 
-//using (var scope = app.Services.CreateScope())
-//{
-//    var context = scope.ServiceProvider.GetRequiredService<DbContextSistema>();
-//    context.Database.Migrate();
-//}
- 
+using (var scope = app.Services.CreateScope())
+{
+    var context = scope.ServiceProvider.GetRequiredService<DbContextSistema>();
+    context.Database.Migrate();
+}
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
