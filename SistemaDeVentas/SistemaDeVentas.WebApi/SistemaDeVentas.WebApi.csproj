@@ -21,6 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\SistemaDeVentas.Application\SistemaDeVentas.Application.csproj" />
     <ProjectReference Include="..\SistemaDeVentas.Infraestructure\SistemaDeVentas.Infraestructure.csproj" />
   </ItemGroup>
 
