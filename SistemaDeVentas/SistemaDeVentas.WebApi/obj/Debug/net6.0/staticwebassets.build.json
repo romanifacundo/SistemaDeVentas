@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "pdwsLQs1tuLBqwm08esvnFgnWYoqb+PyANpl3h4A9Xc=",
+  "Source": "SistemaDeVentas.WebApi",
+  "BasePath": "_content/SistemaDeVentas.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
