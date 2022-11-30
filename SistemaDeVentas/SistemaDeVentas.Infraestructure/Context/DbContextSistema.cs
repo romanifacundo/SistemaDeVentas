@@ -7,11 +7,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace SistemaDeVentas.Infraestructure
+namespace SistemaDeVentas.Infraestructure.Context
 {
-    public class DbContextSistema: DbContext 
+    public class DbContextSistema : DbContext
     {
-        public DbContextSistema(DbContextOptions<DbContextSistema> options) : base (options)
+        public DbContextSistema(DbContextOptions<DbContextSistema> options) : base(options)
         {
 
         }
@@ -20,8 +20,8 @@ namespace SistemaDeVentas.Infraestructure
         public DbSet<Factura> Facturas { get; set; }
         public DbSet<Producto> Productos { get; set; }
         public DbSet<Venta> Ventas { get; set; }
-       
-        
+
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Cliente>().ToTable("Cliente");

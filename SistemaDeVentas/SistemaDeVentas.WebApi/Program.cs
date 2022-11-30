@@ -1,5 +1,5 @@
 using Microsoft.EntityFrameworkCore;
-using SistemaDeVentas.Infraestructure;
+using SistemaDeVentas.Infraestructure.Context;
 using SistemaDeVentas.Infraestructure.Repositories;
 using SistemaDeVentas.Infraestructure.RepositoriesContracts;
 
