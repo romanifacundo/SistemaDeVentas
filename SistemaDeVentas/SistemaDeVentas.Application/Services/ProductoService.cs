@@ -13,6 +13,7 @@ namespace SistemaDeVentas.Application.Services
     public class ProductoService : IProductoService
     {
         private readonly IProductoRepository _productoRepository;
+
         public ProductoService(IProductoRepository productoRepository) 
         {
             _productoRepository = productoRepository;
