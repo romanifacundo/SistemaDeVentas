@@ -15,5 +15,6 @@ namespace SistemaDeVentas.Infraestructure.RepositoriesContracts
         Task<Producto> getProductoAsync(int Id);
 
         Task AddProductoAsync(Producto obj);
+
     }
 }

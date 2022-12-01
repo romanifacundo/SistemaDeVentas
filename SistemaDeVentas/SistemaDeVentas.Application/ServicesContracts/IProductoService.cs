@@ -12,5 +12,7 @@ namespace SistemaDeVentas.Application.ServicesContracts
         Task<Producto> getIdAasync(int Id);
 
         Task AddProductoAsync(Producto obj);
+
+        bool Exists(int Id);
     }
 }
