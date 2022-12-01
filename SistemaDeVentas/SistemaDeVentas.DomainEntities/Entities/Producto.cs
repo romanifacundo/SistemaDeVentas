@@ -14,10 +14,16 @@ namespace SistemaDeVentas.DomainEntities.Entities
     {
         [Key]
         public int Id { get; set; }
+
+        [Required]
         public string? Nombre { get; set; }
+
+        [Required]
         public decimal Costo { get; set; }
+
+        [Required]
         public decimal PrecioUnitario { get; set; }
-        public ICollection<Venta>? Ventas { get; set; }
+
 
     }
 }

@@ -40,15 +40,15 @@ namespace SistemaDeVentas.WebApi.Controllers
         [HttpPost]
         public async Task<IActionResult> Add([FromBody] Producto obj)
         {
-            if (_productoService.Exists(obj.Id))
-            {
-                return BadRequest("Exist");
-            }
-            else
+            try
             {
                 await _productoService.AddProductoAsync(obj);
                 return Ok();
             }
+            catch (Exception ex)
+            {
+                return Ok(BadRequest());
+            }          
         }
     }
 }

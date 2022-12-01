@@ -13,6 +13,6 @@ namespace SistemaDeVentas.Application.ServicesContracts
 
         Task AddProductoAsync(Producto obj);
 
-        bool Exists(int Id);
+
     }
 }

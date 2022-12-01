@@ -4,6 +4,7 @@ using SistemaDeVentas.Infraestructure.Repositories;
 using SistemaDeVentas.Infraestructure.RepositoriesContracts;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity.Core.Metadata.Edm;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -36,5 +37,6 @@ namespace SistemaDeVentas.Application.Services
         {      
             return _productoRepository.AddProductoAsync(obj);
         }
+
     }
 }

@@ -12,8 +12,8 @@ using SistemaDeVentas.Infraestructure.Context;
 namespace SistemaDeVentas.Infraestructure.Migrations
 {
     [DbContext(typeof(DbContextSistema))]
-    [Migration("20221130180515_migrationSistemaDeVentas")]
-    partial class migrationSistemaDeVentas
+    [Migration("20221201194050_migrationDBSV")]
+    partial class migrationDBSV
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,21 +24,6 @@ namespace SistemaDeVentas.Infraestructure.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
-
-            modelBuilder.Entity("ProductoVenta", b =>
-                {
-                    b.Property<int>("ProductosId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("VentasId")
-                        .HasColumnType("int");
-
-                    b.HasKey("ProductosId", "VentasId");
-
-                    b.HasIndex("VentasId");
-
-                    b.ToTable("ProductoVenta");
-                });
 
             modelBuilder.Entity("SistemaDeVentas.DomainEntities.Entities.Cliente", b =>
                 {
@@ -88,7 +73,17 @@ namespace SistemaDeVentas.Infraestructure.Migrations
                     b.Property<decimal>("PrecioUnitario")
                         .HasColumnType("decimal(18,2)");
 
+                    b.Property<int>("productoId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ventaId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("productoId");
+
+                    b.HasIndex("ventaId");
 
                     b.ToTable("Factura", (string)null);
                 });
@@ -125,6 +120,7 @@ namespace SistemaDeVentas.Infraestructure.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<DateTime?>("Fecha")
+                        .IsRequired()
                         .HasColumnType("datetime2");
 
                     b.Property<int>("Id_cliente")
@@ -133,24 +129,44 @@ namespace SistemaDeVentas.Infraestructure.Migrations
                     b.Property<decimal>("Total")
                         .HasColumnType("decimal(18,2)");
 
+                    b.Property<int>("clienteId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
+
+                    b.HasIndex("clienteId");
 
                     b.ToTable("Venta", (string)null);
                 });
 
-            modelBuilder.Entity("ProductoVenta", b =>
+            modelBuilder.Entity("SistemaDeVentas.DomainEntities.Entities.Factura", b =>
                 {
-                    b.HasOne("SistemaDeVentas.DomainEntities.Entities.Producto", null)
+                    b.HasOne("SistemaDeVentas.DomainEntities.Entities.Producto", "producto")
                         .WithMany()
-                        .HasForeignKey("ProductosId")
+                        .HasForeignKey("productoId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("SistemaDeVentas.DomainEntities.Entities.Venta", null)
+                    b.HasOne("SistemaDeVentas.DomainEntities.Entities.Venta", "venta")
                         .WithMany()
-                        .HasForeignKey("VentasId")
+                        .HasForeignKey("ventaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("producto");
+
+                    b.Navigation("venta");
+                });
+
+            modelBuilder.Entity("SistemaDeVentas.DomainEntities.Entities.Venta", b =>
+                {
+                    b.HasOne("SistemaDeVentas.DomainEntities.Entities.Cliente", "cliente")
+                        .WithMany()
+                        .HasForeignKey("clienteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("cliente");
                 });
 #pragma warning restore 612, 618
         }
