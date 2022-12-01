@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SistemaDeVentas.Application.Services;
 using SistemaDeVentas.Application.ServicesContracts;
 using SistemaDeVentas.DomainEntities.Entities;
 using SistemaDeVentas.Infraestructure.Repositories;
@@ -21,17 +22,33 @@ namespace SistemaDeVentas.WebApi.Controllers
 
 
         [HttpGet]
-        public IActionResult Get()
+        public async Task<IActionResult> Get()
         {
-            ICollection<Producto> Lista = _productsRepository.getAll();
-            return Ok(Lista);
+            ICollection<Producto> listaProductos = await _productsRepository.getAllAsync();
+
+            return Ok(listaProductos); 
         }
 
         [HttpGet("{Id}")]
-        public IActionResult Get(int Id) 
+        public async Task<IActionResult> Get(int Id) 
         {
-            var producto = _productoService.getId(Id);
+            var producto = await _productoService.getIdAasync(Id);
+
             return Ok(producto);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Add(Producto obj)
+        {
+            if (obj == null)
+            {
+                return BadRequest();
+            }
+            else
+            {
+                await _productoService.AddProductoAsync(obj);
+                return Ok();
+            }
         }
     }
 }

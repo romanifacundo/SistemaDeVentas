@@ -1,4 +1,5 @@
-﻿using SistemaDeVentas.DomainEntities.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using SistemaDeVentas.DomainEntities.Entities;
 using SistemaDeVentas.Infraestructure.Context;
 using SistemaDeVentas.Infraestructure.RepositoriesContracts;
 using System;
@@ -19,16 +20,31 @@ namespace SistemaDeVentas.Infraestructure.Repositories
             _context= context;
         }
 
-        public ICollection<Producto> getAll()
+        public async Task<ICollection<Producto>> getAllAsync()
         {
-            return _context.Productos.ToList(); 
+            return await _context.Productos.ToListAsync(); 
         }
 
-        public Producto getProducto(int Id) 
+        public async Task<Producto> getProductoAsync(int Id) 
         {
-            Producto? producto = _context.Productos.FirstOrDefault(x => x.Id == Id);
+            Producto? producto =  await _context.Productos.FirstOrDefaultAsync(x => x.Id == Id);
       
             return producto;
+        }
+
+        public async Task AddProductoAsync(Producto obj)
+        {
+            var nuevoProducto = new Producto()
+            {
+                Id = obj.Id,
+                Nombre = obj.Nombre,
+                Costo = obj.Costo,
+                PrecioUnitario = obj.PrecioUnitario,
+            };
+
+            await _context.Productos.AddAsync(nuevoProducto);
+            await _context.SaveChangesAsync();
+
         }
     }
 }

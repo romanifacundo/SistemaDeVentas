@@ -1,4 +1,6 @@
 using Microsoft.EntityFrameworkCore;
+using SistemaDeVentas.Application.Services;
+using SistemaDeVentas.Application.ServicesContracts;
 using SistemaDeVentas.Infraestructure.Context;
 using SistemaDeVentas.Infraestructure.Repositories;
 using SistemaDeVentas.Infraestructure.RepositoriesContracts;
@@ -12,14 +14,17 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//// DBContext.
+// DBContext.
 builder.Services.AddDbContext<DbContextSistema>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("SistemaConnection"));
 });
 
-//Servicios de Repository.
-builder.Services.AddScoped<IProductoRepository, ProductoRepository>(); 
+// Repository.
+builder.Services.AddScoped<IProductoRepository, ProductoRepository>();
+
+// Services.
+builder.Services.AddScoped<IProductoService, ProductoService>();
 
 var app = builder.Build();
 

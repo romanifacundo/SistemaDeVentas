@@ -9,6 +9,8 @@ namespace SistemaDeVentas.Application.ServicesContracts
 {
     public interface IProductoService
     {
-        public Producto getId(int Id);
+        Task<Producto> getIdAasync(int Id);
+
+        Task AddProductoAsync(Producto obj);
     }
 }

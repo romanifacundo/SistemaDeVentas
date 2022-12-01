@@ -97,3 +97,5 @@ C:\Facundo\Programación\Repositorio GitHub\SistemaDeVentas\SistemaDeVentas\Sist
 C:\Facundo\Programación\Repositorio GitHub\SistemaDeVentas\SistemaDeVentas\SistemaDeVentas.WebApi\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Facundo\Programación\Repositorio GitHub\SistemaDeVentas\SistemaDeVentas\SistemaDeVentas.WebApi\bin\Debug\net6.0\SistemaDeVentas.DomainEntities.dll
 C:\Facundo\Programación\Repositorio GitHub\SistemaDeVentas\SistemaDeVentas\SistemaDeVentas.WebApi\bin\Debug\net6.0\SistemaDeVentas.DomainEntities.pdb
+C:\Facundo\Programación\Repositorio GitHub\SistemaDeVentas\SistemaDeVentas\SistemaDeVentas.WebApi\bin\Debug\net6.0\SistemaDeVentas.Application.dll
+C:\Facundo\Programación\Repositorio GitHub\SistemaDeVentas\SistemaDeVentas\SistemaDeVentas.WebApi\bin\Debug\net6.0\SistemaDeVentas.Application.pdb

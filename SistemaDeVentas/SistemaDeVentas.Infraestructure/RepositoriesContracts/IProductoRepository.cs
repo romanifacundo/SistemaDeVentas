@@ -10,8 +10,10 @@ namespace SistemaDeVentas.Infraestructure.RepositoriesContracts
 {
     public interface IProductoRepository
     {
-        public ICollection<Producto> getAll();
+        Task<ICollection<Producto>> getAllAsync();
 
-        public Producto getProducto(int Id);
+        Task<Producto> getProductoAsync(int Id);
+
+        Task AddProductoAsync(Producto obj);
     }
 }

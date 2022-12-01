@@ -18,9 +18,9 @@ namespace SistemaDeVentas.Application.Services
         {
             _productoRepository = productoRepository;
         }
-        public Producto getId(int Id)
+        public async Task<Producto> getIdAasync(int Id)
         {
-            Producto producto = _productoRepository.getProducto(Id);
+            var producto = await _productoRepository.getProductoAsync(Id);
 
             if(producto is null) 
             {
@@ -30,6 +30,11 @@ namespace SistemaDeVentas.Application.Services
             {
                 return producto;
             }
+        }
+
+        public Task AddProductoAsync(Producto obj)
+        {      
+            return _productoRepository.AddProductoAsync(obj);
         }
     }
 }
