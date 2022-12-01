@@ -25,12 +25,12 @@ namespace SistemaDeVentas.DomainEntities.Entities
         [Required]
         public decimal Importe { get; set; }
 
-        [ForeignKey("Producto")]
-        public int Id_producto { get; set; }
+       
+        public int ProductoId { get; set; }
         public Producto producto { get; set; }
 
-        [ForeignKey("Venta")]
-        public int Id_venta { get; set; }
+        
+        public int VentaId { get; set; }
         public Venta venta { get; set; }
 
     }

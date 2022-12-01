@@ -12,8 +12,8 @@ using SistemaDeVentas.Infraestructure.Context;
 namespace SistemaDeVentas.Infraestructure.Migrations
 {
     [DbContext(typeof(DbContextSistema))]
-    [Migration("20221201194050_migrationDBSV")]
-    partial class migrationDBSV
+    [Migration("20221201202307_MigrationSDV22")]
+    partial class MigrationSDV22
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -61,29 +61,23 @@ namespace SistemaDeVentas.Infraestructure.Migrations
                     b.Property<int>("Cantidad")
                         .HasColumnType("int");
 
-                    b.Property<int>("Id_producto")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Id_venta")
-                        .HasColumnType("int");
-
                     b.Property<decimal>("Importe")
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<decimal>("PrecioUnitario")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int>("productoId")
+                    b.Property<int>("ProductoId")
                         .HasColumnType("int");
 
-                    b.Property<int>("ventaId")
+                    b.Property<int>("VentaId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("productoId");
+                    b.HasIndex("ProductoId");
 
-                    b.HasIndex("ventaId");
+                    b.HasIndex("VentaId");
 
                     b.ToTable("Factura", (string)null);
                 });
@@ -119,22 +113,19 @@ namespace SistemaDeVentas.Infraestructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("ClienteId")
+                        .HasColumnType("int");
+
                     b.Property<DateTime?>("Fecha")
                         .IsRequired()
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("Id_cliente")
-                        .HasColumnType("int");
-
                     b.Property<decimal>("Total")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int>("clienteId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("clienteId");
+                    b.HasIndex("ClienteId");
 
                     b.ToTable("Venta", (string)null);
                 });
@@ -143,13 +134,13 @@ namespace SistemaDeVentas.Infraestructure.Migrations
                 {
                     b.HasOne("SistemaDeVentas.DomainEntities.Entities.Producto", "producto")
                         .WithMany()
-                        .HasForeignKey("productoId")
+                        .HasForeignKey("ProductoId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("SistemaDeVentas.DomainEntities.Entities.Venta", "venta")
                         .WithMany()
-                        .HasForeignKey("ventaId")
+                        .HasForeignKey("VentaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -162,7 +153,7 @@ namespace SistemaDeVentas.Infraestructure.Migrations
                 {
                     b.HasOne("SistemaDeVentas.DomainEntities.Entities.Cliente", "cliente")
                         .WithMany()
-                        .HasForeignKey("clienteId")
+                        .HasForeignKey("ClienteId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
