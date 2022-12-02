@@ -50,6 +50,23 @@ namespace SistemaDeVentas.WebApi.Controllers
                 return Ok(BadRequest());
             }          
         }
+
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update(int id , Producto obj)
+        {
+            var producto = await _productoService.getIdAasync(id);
+
+            if(producto.Id != obj.Id)
+            {
+                return BadRequest("Is Null");
+            }
+            else
+            {
+                await _productoService.UpdateAsync(obj);
+                return Ok();
+            }
+
+        }
     }
 }
 

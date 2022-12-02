@@ -35,8 +35,12 @@ namespace SistemaDeVentas.Application.Services
 
         public Task AddProductoAsync(Producto obj)
         {      
-            return _productoRepository.AddProductoAsync(obj);
+            return  _productoRepository.AddProductoAsync(obj);
         }
 
+        public Task UpdateAsync( Producto obj)
+        {
+            return _productoRepository.UpdateAsync(obj);
+        }
     }
 }

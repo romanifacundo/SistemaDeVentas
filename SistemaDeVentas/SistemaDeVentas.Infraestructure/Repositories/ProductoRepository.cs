@@ -15,20 +15,20 @@ namespace SistemaDeVentas.Infraestructure.Repositories
     {
         readonly private DbContextSistema _context;
 
-        public ProductoRepository(DbContextSistema context) 
-        { 
-            _context= context;
+        public ProductoRepository(DbContextSistema context)
+        {
+            _context = context;
         }
 
         public async Task<ICollection<Producto>> getAllAsync()
         {
-            return await _context.Productos.ToListAsync(); 
+            return await _context.Productos.ToListAsync();
         }
 
-        public async Task<Producto> getProductoAsync(int Id) 
+        public async Task<Producto> getProductoAsync(int Id)
         {
-            Producto? producto =  await _context.Productos.FirstOrDefaultAsync(x => x.Id == Id);
-      
+            Producto? producto = await _context.Productos.FirstOrDefaultAsync(x => x.Id == Id);
+
             return producto;
         }
 
@@ -46,5 +46,21 @@ namespace SistemaDeVentas.Infraestructure.Repositories
             await _context.SaveChangesAsync();
 
         }
+
+        public async Task UpdateAsync(Producto obj)
+        {
+            Producto? producto = await _context.Productos.FirstOrDefaultAsync(x => x.Id == obj.Id);
+
+            if (producto != null)
+            {   
+                producto.Nombre = obj.Nombre;
+                producto.Costo = obj.Costo;
+                producto.PrecioUnitario = obj.PrecioUnitario;
+
+                await _context.SaveChangesAsync();
+            }
+        
+        }
+
     }
 }
