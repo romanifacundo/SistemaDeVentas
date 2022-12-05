@@ -13,7 +13,7 @@ namespace SistemaDeVentas.Application.Services
     {
         private readonly IClienteRepository _clienteRepository;
 
-        public ClienteService(IClienteRepository clienteRepository) 
+        public ClienteService(IClienteRepository clienteRepository)
         {
             _clienteRepository = clienteRepository;
         }
@@ -26,7 +26,7 @@ namespace SistemaDeVentas.Application.Services
         {
             var cliente = _clienteRepository.getIdAsync(id);
 
-            if(cliente == null)
+            if (cliente == null)
             {
                 throw new Exception("Entity is null");
             }
@@ -36,11 +36,11 @@ namespace SistemaDeVentas.Application.Services
             }
         }
 
-        public  Task CrearClienteAsync(Cliente obj) 
+        public Task CrearClienteAsync(Cliente obj)
         {
             //if(obj != null)
             //{
-                
+
             //}
             //else
             //{
@@ -48,6 +48,13 @@ namespace SistemaDeVentas.Application.Services
             //}
 
             return _clienteRepository.addClienteAsync(obj);
+        }
+
+        public Task Update(Cliente obj)
+        {
+
+            return _clienteRepository.updateClienteAsync(obj);
+
         }
     }
 }

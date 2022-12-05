@@ -14,5 +14,7 @@ namespace SistemaDeVentas.Application.ServicesContracts
         Task<Cliente> getIdAsync(int id);
 
         Task CrearClienteAsync(Cliente obj);
+
+        Task Update(Cliente obj);
     }
 }

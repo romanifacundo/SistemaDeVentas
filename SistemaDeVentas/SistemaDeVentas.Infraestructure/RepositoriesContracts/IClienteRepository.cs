@@ -14,5 +14,7 @@ namespace SistemaDeVentas.Infraestructure.RepositoriesContracts
         Task<Cliente> getIdAsync(int id);
 
         Task addClienteAsync(Cliente obj);
+
+        Task updateClienteAsync(Cliente obj);
     }
 }

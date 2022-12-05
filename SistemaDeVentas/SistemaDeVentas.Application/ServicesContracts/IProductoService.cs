@@ -14,5 +14,6 @@ namespace SistemaDeVentas.Application.ServicesContracts
         Task AddProductoAsync(Producto obj);
 
         Task UpdateAsync(Producto obj);
+
     }
 }

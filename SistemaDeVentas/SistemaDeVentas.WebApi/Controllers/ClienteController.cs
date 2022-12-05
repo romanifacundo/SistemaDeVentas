@@ -56,5 +56,18 @@ namespace SistemaDeVentas.WebApi.Controllers
             }
         }
 
+        [HttpPut("{id}")]
+        public async Task<IActionResult> ActualiazarCliente(int id , Cliente obj)
+        {
+            if(obj.Id != id)
+            {
+                return Ok(BadRequest("Is Null"));
+            }
+            else
+            {
+                await _clienteService.Update(obj);
+                return Ok();
+            }
+        }
     }
 }
