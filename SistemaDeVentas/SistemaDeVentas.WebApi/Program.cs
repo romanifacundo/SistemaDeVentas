@@ -22,9 +22,10 @@ builder.Services.AddDbContext<DbContextSistema>(options =>
 
 // Repository.
 builder.Services.AddScoped<IProductoRepository, ProductoRepository>();
-
+builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
 // Services.
 builder.Services.AddScoped<IProductoService, ProductoService>();
+builder.Services.AddScoped<IClienteService, ClienteService>();
 
 var app = builder.Build();
 

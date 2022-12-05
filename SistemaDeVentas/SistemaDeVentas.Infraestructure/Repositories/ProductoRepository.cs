@@ -44,7 +44,7 @@ namespace SistemaDeVentas.Infraestructure.Repositories
 
             await _context.Productos.AddAsync(nuevoProducto);
             await _context.SaveChangesAsync();
-
+        
         }
 
         public async Task UpdateAsync(Producto obj)
