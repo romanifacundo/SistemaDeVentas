@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Data.Entity.Core.Metadata.Edm;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -38,9 +39,21 @@ namespace SistemaDeVentas.Application.Services
             return  _productoRepository.AddProductoAsync(obj);
         }
 
-        public Task UpdateAsync( Producto obj)
+        public Task UpdateAsync(Producto obj)
         {
             return _productoRepository.UpdateAsync(obj);
+        }
+
+        public async Task DeleteAsync(int id)
+        {
+            if(id != null) 
+            {
+                await _productoRepository.DeleteAsync(id); 
+            }
+            else
+            {
+                throw new Exception("Entity is null");
+            }
         }
     }
 }

@@ -15,5 +15,7 @@ namespace SistemaDeVentas.Application.ServicesContracts
 
         Task UpdateAsync(Producto obj);
 
+        Task DeleteAsync(int Id);
+
     }
 }

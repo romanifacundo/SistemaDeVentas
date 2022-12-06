@@ -67,6 +67,20 @@ namespace SistemaDeVentas.WebApi.Controllers
             }
 
         }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id) 
+        {
+            try
+            {
+                await _productoService.DeleteAsync(id);
+                return Ok("Producto deleted with success");
+            }
+            catch (Exception ex)
+            {
+                throw ex; 
+            }
+        }
     }
 }
 

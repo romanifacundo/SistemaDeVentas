@@ -61,6 +61,12 @@ namespace SistemaDeVentas.Infraestructure.Repositories
             }
         
         }
-
+            
+        public async Task DeleteAsync(int id)
+        {
+            Producto? producto = await _context.Productos.FirstOrDefaultAsync(x=> x.Id == id);
+            _context.Productos.Remove(producto);
+            await _context.SaveChangesAsync();    
+        }
     }
 }

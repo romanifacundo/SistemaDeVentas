@@ -54,7 +54,7 @@ namespace SistemaDeVentas.Infraestructure.Repositories
                 await _context.SaveChangesAsync();
             }
 
-            
+      
         }
     }
 }
