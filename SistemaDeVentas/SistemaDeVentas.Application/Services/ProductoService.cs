@@ -20,7 +20,7 @@ namespace SistemaDeVentas.Application.Services
         {
             _productoRepository = productoRepository;
         }
-        public async Task<Producto> getIdAasync(int Id)
+        public async Task<Producto> GetIdAasync(int Id)
         {
             var producto = await _productoRepository.GetProductoAsync(Id);
 
