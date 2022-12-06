@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.WebApi\\SistemaDeVentas.WebApi.csproj": {}
+    "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaVentas\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.WebApi\\SistemaDeVentas.WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Application\\SistemaDeVentas.Application.csproj": {
+    "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaVentas\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Application\\SistemaDeVentas.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Application\\SistemaDeVentas.Application.csproj",
+        "projectUniqueName": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaVentas\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Application\\SistemaDeVentas.Application.csproj",
         "projectName": "SistemaDeVentas.Application",
-        "projectPath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Application\\SistemaDeVentas.Application.csproj",
+        "projectPath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaVentas\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Application\\SistemaDeVentas.Application.csproj",
         "packagesPath": "C:\\Users\\Facun\\.nuget\\packages\\",
-        "outputPath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Application\\obj\\",
+        "outputPath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaVentas\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Facun\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.DomainEntities\\SistemaDeVentas.DomainEntities.csproj": {
-                "projectPath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.DomainEntities\\SistemaDeVentas.DomainEntities.csproj"
+              "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaVentas\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.DomainEntities\\SistemaDeVentas.DomainEntities.csproj": {
+                "projectPath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaVentas\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.DomainEntities\\SistemaDeVentas.DomainEntities.csproj"
               },
-              "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Infraestructure\\SistemaDeVentas.Infraestructure.csproj": {
-                "projectPath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Infraestructure\\SistemaDeVentas.Infraestructure.csproj"
+              "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaVentas\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Infraestructure\\SistemaDeVentas.Infraestructure.csproj": {
+                "projectPath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaVentas\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Infraestructure\\SistemaDeVentas.Infraestructure.csproj"
               }
             }
           }
@@ -88,14 +88,14 @@
         }
       }
     },
-    "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.DomainEntities\\SistemaDeVentas.DomainEntities.csproj": {
+    "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaVentas\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.DomainEntities\\SistemaDeVentas.DomainEntities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.DomainEntities\\SistemaDeVentas.DomainEntities.csproj",
+        "projectUniqueName": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaVentas\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.DomainEntities\\SistemaDeVentas.DomainEntities.csproj",
         "projectName": "SistemaDeVentas.DomainEntities",
-        "projectPath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.DomainEntities\\SistemaDeVentas.DomainEntities.csproj",
+        "projectPath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaVentas\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.DomainEntities\\SistemaDeVentas.DomainEntities.csproj",
         "packagesPath": "C:\\Users\\Facun\\.nuget\\packages\\",
-        "outputPath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.DomainEntities\\obj\\",
+        "outputPath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaVentas\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.DomainEntities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Facun\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -169,14 +169,14 @@
         }
       }
     },
-    "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Infraestructure\\SistemaDeVentas.Infraestructure.csproj": {
+    "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaVentas\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Infraestructure\\SistemaDeVentas.Infraestructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Infraestructure\\SistemaDeVentas.Infraestructure.csproj",
+        "projectUniqueName": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaVentas\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Infraestructure\\SistemaDeVentas.Infraestructure.csproj",
         "projectName": "SistemaDeVentas.Infraestructure",
-        "projectPath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Infraestructure\\SistemaDeVentas.Infraestructure.csproj",
+        "projectPath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaVentas\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Infraestructure\\SistemaDeVentas.Infraestructure.csproj",
         "packagesPath": "C:\\Users\\Facun\\.nuget\\packages\\",
-        "outputPath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Infraestructure\\obj\\",
+        "outputPath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaVentas\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Infraestructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Facun\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -193,8 +193,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.DomainEntities\\SistemaDeVentas.DomainEntities.csproj": {
-                "projectPath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.DomainEntities\\SistemaDeVentas.DomainEntities.csproj"
+              "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaVentas\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.DomainEntities\\SistemaDeVentas.DomainEntities.csproj": {
+                "projectPath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaVentas\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.DomainEntities\\SistemaDeVentas.DomainEntities.csproj"
               }
             }
           }
@@ -254,14 +254,14 @@
         }
       }
     },
-    "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.WebApi\\SistemaDeVentas.WebApi.csproj": {
+    "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaVentas\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.WebApi\\SistemaDeVentas.WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.WebApi\\SistemaDeVentas.WebApi.csproj",
+        "projectUniqueName": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaVentas\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.WebApi\\SistemaDeVentas.WebApi.csproj",
         "projectName": "SistemaDeVentas.WebApi",
-        "projectPath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.WebApi\\SistemaDeVentas.WebApi.csproj",
+        "projectPath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaVentas\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.WebApi\\SistemaDeVentas.WebApi.csproj",
         "packagesPath": "C:\\Users\\Facun\\.nuget\\packages\\",
-        "outputPath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.WebApi\\obj\\",
+        "outputPath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaVentas\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.WebApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Facun\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -278,11 +278,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Application\\SistemaDeVentas.Application.csproj": {
-                "projectPath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Application\\SistemaDeVentas.Application.csproj"
+              "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaVentas\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Application\\SistemaDeVentas.Application.csproj": {
+                "projectPath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaVentas\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Application\\SistemaDeVentas.Application.csproj"
               },
-              "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Infraestructure\\SistemaDeVentas.Infraestructure.csproj": {
-                "projectPath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Infraestructure\\SistemaDeVentas.Infraestructure.csproj"
+              "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaVentas\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Infraestructure\\SistemaDeVentas.Infraestructure.csproj": {
+                "projectPath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaVentas\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Infraestructure\\SistemaDeVentas.Infraestructure.csproj"
               }
             }
           }

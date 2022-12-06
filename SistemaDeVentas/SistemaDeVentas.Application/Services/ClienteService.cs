@@ -17,14 +17,14 @@ namespace SistemaDeVentas.Application.Services
         {
             _clienteRepository = clienteRepository;
         }
-        public Task<ICollection<Cliente>> getAllAsync()
+        public Task<ICollection<Cliente>> GetAllAsync()
         {
             return _clienteRepository.GetAllAsync();
         }
 
-        public Task<Cliente> getIdAsync(int id)
+        public Task<Cliente> GetIdAsync(int id)
         {
-            var cliente = _clienteRepository.getIdAsync(id);
+            var cliente = _clienteRepository.GetIdAsync(id);
 
             if (cliente == null)
             {
@@ -47,14 +47,26 @@ namespace SistemaDeVentas.Application.Services
             //    throw new Exception("Cliente Existe");
             //}
 
-            return _clienteRepository.addClienteAsync(obj);
+            return _clienteRepository.AddClienteAsync(obj);
         }
 
         public Task Update(Cliente obj)
         {
 
-            return _clienteRepository.updateClienteAsync(obj);
+            return _clienteRepository.UpdateClienteAsync(obj);
 
+        }
+
+        public async Task Delete(int id)
+        {
+            if (id != null)
+            {
+                await _clienteRepository.DeleteAsync(id);
+            }
+            else
+            {
+                throw new Exception("Is null");
+            }
         }
     }
 }

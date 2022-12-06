@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PznB3I6wPofLAou8PTQeL9WllzmKfpPsPSrqOFF0WwcxM263o3NqWvsxFJWhjgysXM7FnGy+PC0w4ZAfnn84ZA==",
+  "dgSpecHash": "ZSrkYeu7vejBFWCQwpPRQE17bp00QTZGH5jFWQx62cpnX0KYbluqwcsqYSpz3HgPWwmAAc/6B2WXLzce22PQbg==",
   "success": true,
-  "projectFilePath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Infraestructure\\SistemaDeVentas.Infraestructure.csproj",
+  "projectFilePath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaVentas\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Infraestructure\\SistemaDeVentas.Infraestructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Facun\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Facun\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

@@ -20,7 +20,7 @@ namespace SistemaDeVentas.WebApi.Controllers
         [HttpGet]
         public async Task<IActionResult> getClientes()
         {
-            ICollection<Cliente> listaClientes = await _clienteService.getAllAsync();
+            ICollection<Cliente> listaClientes = await _clienteService.GetAllAsync();
 
             return Ok(listaClientes);
 
@@ -29,7 +29,7 @@ namespace SistemaDeVentas.WebApi.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> getId(int id)
         {
-            var cliente = await _clienteService.getIdAsync(id);
+            var cliente = await _clienteService.GetIdAsync(id);
             
             if(cliente.Id != id)
             {
@@ -67,6 +67,21 @@ namespace SistemaDeVentas.WebApi.Controllers
             {
                 await _clienteService.Update(obj);
                 return Ok();
+            }
+        }
+
+        [HttpDelete("{id}")]
+
+        public async Task<IActionResult> DeleteCliente(int id)
+        {
+            try
+            {
+                await _clienteService.Delete(id);
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
             }
         }
     }

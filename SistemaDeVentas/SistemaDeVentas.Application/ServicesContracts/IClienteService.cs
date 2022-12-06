@@ -9,12 +9,14 @@ namespace SistemaDeVentas.Application.ServicesContracts
 {
     public interface IClienteService
     {
-        Task<ICollection<Cliente>> getAllAsync();
+        Task<ICollection<Cliente>> GetAllAsync();
 
-        Task<Cliente> getIdAsync(int id);
+        Task<Cliente> GetIdAsync(int id);
 
         Task CrearClienteAsync(Cliente obj);
 
         Task Update(Cliente obj);
+
+        Task Delete(int id);
     }
 }

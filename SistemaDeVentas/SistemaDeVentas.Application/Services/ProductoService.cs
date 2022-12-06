@@ -22,7 +22,7 @@ namespace SistemaDeVentas.Application.Services
         }
         public async Task<Producto> getIdAasync(int Id)
         {
-            var producto = await _productoRepository.getProductoAsync(Id);
+            var producto = await _productoRepository.GetProductoAsync(Id);
 
             if(producto is null) 
             {

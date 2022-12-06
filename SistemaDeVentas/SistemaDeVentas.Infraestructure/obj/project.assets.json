@@ -3944,11 +3944,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Infraestructure\\SistemaDeVentas.Infraestructure.csproj",
+      "projectUniqueName": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaVentas\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Infraestructure\\SistemaDeVentas.Infraestructure.csproj",
       "projectName": "SistemaDeVentas.Infraestructure",
-      "projectPath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Infraestructure\\SistemaDeVentas.Infraestructure.csproj",
+      "projectPath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaVentas\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Infraestructure\\SistemaDeVentas.Infraestructure.csproj",
       "packagesPath": "C:\\Users\\Facun\\.nuget\\packages\\",
-      "outputPath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Infraestructure\\obj\\",
+      "outputPath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaVentas\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.Infraestructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Facun\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3965,8 +3965,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.DomainEntities\\SistemaDeVentas.DomainEntities.csproj": {
-              "projectPath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.DomainEntities\\SistemaDeVentas.DomainEntities.csproj"
+            "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaVentas\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.DomainEntities\\SistemaDeVentas.DomainEntities.csproj": {
+              "projectPath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaVentas\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.DomainEntities\\SistemaDeVentas.DomainEntities.csproj"
             }
           }
         }

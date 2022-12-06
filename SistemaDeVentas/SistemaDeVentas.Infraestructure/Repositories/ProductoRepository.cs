@@ -20,12 +20,12 @@ namespace SistemaDeVentas.Infraestructure.Repositories
             _context = context;
         }
 
-        public async Task<ICollection<Producto>> getAllAsync()
+        public async Task<ICollection<Producto>> GetAllAsync()
         {
             return await _context.Productos.ToListAsync();
         }
 
-        public async Task<Producto> getProductoAsync(int Id)
+        public async Task<Producto> GetProductoAsync(int Id)
         {
             Producto? producto = await _context.Productos.FirstOrDefaultAsync(x => x.Id == Id);
 
@@ -65,7 +65,9 @@ namespace SistemaDeVentas.Infraestructure.Repositories
         public async Task DeleteAsync(int id)
         {
             Producto? producto = await _context.Productos.FirstOrDefaultAsync(x=> x.Id == id);
+            
             _context.Productos.Remove(producto);
+            
             await _context.SaveChangesAsync();    
         }
     }

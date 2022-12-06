@@ -22,7 +22,7 @@ namespace SistemaDeVentas.Infraestructure.Repositories
             return await _context.Clientes.ToListAsync();
         }
 
-        public async Task<Cliente> getIdAsync(int id)
+        public async Task<Cliente> GetIdAsync(int id)
         {
             return await _context.Clientes.FirstOrDefaultAsync(c => c.Id == id);
         }
@@ -41,7 +41,7 @@ namespace SistemaDeVentas.Infraestructure.Repositories
             await _context.SaveChangesAsync();
         }
             
-        public async Task updateClienteAsync(Cliente obj)
+        public async Task UpdateClienteAsync(Cliente obj)
         {
             var cliente = await _context.Clientes.FirstOrDefaultAsync(c =>c.Id == obj.Id);
 
@@ -56,5 +56,15 @@ namespace SistemaDeVentas.Infraestructure.Repositories
 
       
         }
+
+        public async Task DeleteAsync(int id)
+        {
+            Cliente? cliente = await _context.Clientes.FirstOrDefaultAsync(c => c.Id == id);
+
+            _context.Clientes.Remove(cliente);
+
+            await _context.SaveChangesAsync();
+        }
+
     }
 }

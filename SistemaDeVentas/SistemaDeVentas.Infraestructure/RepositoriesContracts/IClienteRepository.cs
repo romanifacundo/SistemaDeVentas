@@ -11,10 +11,12 @@ namespace SistemaDeVentas.Infraestructure.RepositoriesContracts
     {
         Task<ICollection<Cliente>> GetAllAsync();
 
-        Task<Cliente> getIdAsync(int id);
+        Task<Cliente> GetIdAsync(int id);
 
-        Task addClienteAsync(Cliente obj);
+        Task AddClienteAsync(Cliente obj);
 
-        Task updateClienteAsync(Cliente obj);
+        Task UpdateClienteAsync(Cliente obj);
+
+        Task DeleteAsync(int id);
     }
 }

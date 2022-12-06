@@ -3923,11 +3923,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.DomainEntities\\SistemaDeVentas.DomainEntities.csproj",
+      "projectUniqueName": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaVentas\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.DomainEntities\\SistemaDeVentas.DomainEntities.csproj",
       "projectName": "SistemaDeVentas.DomainEntities",
-      "projectPath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.DomainEntities\\SistemaDeVentas.DomainEntities.csproj",
+      "projectPath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaVentas\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.DomainEntities\\SistemaDeVentas.DomainEntities.csproj",
       "packagesPath": "C:\\Users\\Facun\\.nuget\\packages\\",
-      "outputPath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.DomainEntities\\obj\\",
+      "outputPath": "C:\\Facundo\\Programación\\Repositorio GitHub\\SistemaVentas\\SistemaDeVentas\\SistemaDeVentas\\SistemaDeVentas.DomainEntities\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Facun\\AppData\\Roaming\\NuGet\\NuGet.Config",

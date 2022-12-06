@@ -32,7 +32,7 @@ namespace SistemaDeVentas.WebApi.Controllers
         [HttpGet("{Id}")]
         public async Task<IActionResult> Get(int Id) 
         {
-            var producto = await _productoService.getIdAasync(Id);
+            var producto = await _productoService.GetIdAasync(Id);
 
             return Ok(producto);
         }
@@ -54,7 +54,7 @@ namespace SistemaDeVentas.WebApi.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id , Producto obj)
         {
-            var producto = await _productoService.getIdAasync(id);
+            var producto = await _productoService.GetIdAasync(id);
 
             if(producto.Id != obj.Id)
             {
