@@ -47,7 +47,7 @@ namespace SistemaDeVentas.Application.Services
             //    throw new Exception("Cliente Existe");
             //}
 
-            return _clienteRepository.AddClienteAsync(obj);
+            return  _clienteRepository.AddClienteAsync(obj);
         }
 
         public Task Update(Cliente obj)

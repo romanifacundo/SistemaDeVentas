@@ -27,7 +27,7 @@ namespace SistemaDeVentas.Infraestructure.Repositories
             return await _context.Clientes.FirstOrDefaultAsync(c => c.Id == id);
         }
 
-        public async Task addClienteAsync(Cliente obj) 
+        public async Task AddClienteAsync(Cliente obj)
         {
             var nuevoCliente = new Cliente()
             {
@@ -39,22 +39,23 @@ namespace SistemaDeVentas.Infraestructure.Repositories
 
             await _context.Clientes.AddAsync(nuevoCliente);
             await _context.SaveChangesAsync();
+
         }
-            
+
         public async Task UpdateClienteAsync(Cliente obj)
         {
-            var cliente = await _context.Clientes.FirstOrDefaultAsync(c =>c.Id == obj.Id);
+            var cliente = await _context.Clientes.FirstOrDefaultAsync(c => c.Id == obj.Id);
 
             if (cliente != null)
             {
                 cliente.Nombre = obj.Nombre;
                 cliente.Apellido = obj.Apellido;
                 cliente.Email = obj.Email;
-                
+
                 await _context.SaveChangesAsync();
             }
 
-      
+
         }
 
         public async Task DeleteAsync(int id)

@@ -27,10 +27,13 @@ namespace SistemaDeVentas.DomainEntities.Entities
 
        
         public int ProductoId { get; set; }
+        [ForeignKey("ProductoId")]
         public Producto producto { get; set; }
 
         
         public int VentaId { get; set; }
+        
+        [ForeignKey("VentaId")]
         public Venta venta { get; set; }
 
     }

@@ -30,8 +30,8 @@ namespace SistemaDeVentas.WebApi.Controllers
         public async Task<IActionResult> getId(int id)
         {
             var cliente = await _clienteService.GetIdAsync(id);
-            
-            if(cliente.Id != id)
+
+            if (cliente.Id != id)
             {
                 return NotFound();
             }
@@ -42,7 +42,7 @@ namespace SistemaDeVentas.WebApi.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CrearCliente([FromBody] Cliente obj) 
+        public async Task<IActionResult> CrearCliente([FromBody] Cliente obj)
         {
             try
             {
@@ -57,9 +57,9 @@ namespace SistemaDeVentas.WebApi.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> ActualiazarCliente(int id , Cliente obj)
+        public async Task<IActionResult> ActualiazarCliente(int id, Cliente obj)
         {
-            if(obj.Id != id)
+            if (obj.Id != id)
             {
                 return Ok(BadRequest("Is Null"));
             }
@@ -71,7 +71,6 @@ namespace SistemaDeVentas.WebApi.Controllers
         }
 
         [HttpDelete("{id}")]
-
         public async Task<IActionResult> DeleteCliente(int id)
         {
             try

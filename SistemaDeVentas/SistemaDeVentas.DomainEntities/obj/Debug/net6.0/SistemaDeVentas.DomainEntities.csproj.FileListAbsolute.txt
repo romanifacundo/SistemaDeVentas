@@ -12,3 +12,17 @@ C:\Facundo\Programación\Repositorio GitHub\SistemaDeVentas\SistemaDeVentas\Sist
 C:\Facundo\Programación\Repositorio GitHub\SistemaDeVentas\SistemaDeVentas\SistemaDeVentas.DomainEntities\obj\Debug\net6.0\SistemaDeVentas.DomainEntities.pdb
 C:\Facundo\Programación\Repositorio GitHub\SistemaDeVentas\SistemaDeVentas\SistemaDeVentas.DomainEntities\obj\Debug\net6.0\SistemaDeVentas.DomainEntities.genruntimeconfig.cache
 C:\Facundo\Programación\Repositorio GitHub\SistemaDeVentas\SistemaDeVentas\SistemaDeVentas.DomainEntities\obj\Debug\net6.0\ref\SistemaDeVentas.DomainEntities.dll
+C:\Facundo\Programación\Repositorio GitHub\SistemaVentas\SistemaDeVentas\SistemaDeVentas\SistemaDeVentas.DomainEntities\bin\Debug\net6.0\SistemaDeVentas.DomainEntities.deps.json
+C:\Facundo\Programación\Repositorio GitHub\SistemaVentas\SistemaDeVentas\SistemaDeVentas\SistemaDeVentas.DomainEntities\bin\Debug\net6.0\SistemaDeVentas.DomainEntities.runtimeconfig.json
+C:\Facundo\Programación\Repositorio GitHub\SistemaVentas\SistemaDeVentas\SistemaDeVentas\SistemaDeVentas.DomainEntities\bin\Debug\net6.0\SistemaDeVentas.DomainEntities.dll
+C:\Facundo\Programación\Repositorio GitHub\SistemaVentas\SistemaDeVentas\SistemaDeVentas\SistemaDeVentas.DomainEntities\bin\Debug\net6.0\SistemaDeVentas.DomainEntities.pdb
+C:\Facundo\Programación\Repositorio GitHub\SistemaVentas\SistemaDeVentas\SistemaDeVentas\SistemaDeVentas.DomainEntities\obj\Debug\net6.0\SistemaDeVentas.DomainEntities.csproj.AssemblyReference.cache
+C:\Facundo\Programación\Repositorio GitHub\SistemaVentas\SistemaDeVentas\SistemaDeVentas\SistemaDeVentas.DomainEntities\obj\Debug\net6.0\SistemaDeVentas.DomainEntities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Facundo\Programación\Repositorio GitHub\SistemaVentas\SistemaDeVentas\SistemaDeVentas\SistemaDeVentas.DomainEntities\obj\Debug\net6.0\SistemaDeVentas.DomainEntities.AssemblyInfoInputs.cache
+C:\Facundo\Programación\Repositorio GitHub\SistemaVentas\SistemaDeVentas\SistemaDeVentas\SistemaDeVentas.DomainEntities\obj\Debug\net6.0\SistemaDeVentas.DomainEntities.AssemblyInfo.cs
+C:\Facundo\Programación\Repositorio GitHub\SistemaVentas\SistemaDeVentas\SistemaDeVentas\SistemaDeVentas.DomainEntities\obj\Debug\net6.0\SistemaDeVentas.DomainEntities.csproj.CoreCompileInputs.cache
+C:\Facundo\Programación\Repositorio GitHub\SistemaVentas\SistemaDeVentas\SistemaDeVentas\SistemaDeVentas.DomainEntities\obj\Debug\net6.0\SistemaDeVentas.DomainEntities.dll
+C:\Facundo\Programación\Repositorio GitHub\SistemaVentas\SistemaDeVentas\SistemaDeVentas\SistemaDeVentas.DomainEntities\obj\Debug\net6.0\refint\SistemaDeVentas.DomainEntities.dll
+C:\Facundo\Programación\Repositorio GitHub\SistemaVentas\SistemaDeVentas\SistemaDeVentas\SistemaDeVentas.DomainEntities\obj\Debug\net6.0\SistemaDeVentas.DomainEntities.pdb
+C:\Facundo\Programación\Repositorio GitHub\SistemaVentas\SistemaDeVentas\SistemaDeVentas\SistemaDeVentas.DomainEntities\obj\Debug\net6.0\SistemaDeVentas.DomainEntities.genruntimeconfig.cache
+C:\Facundo\Programación\Repositorio GitHub\SistemaVentas\SistemaDeVentas\SistemaDeVentas\SistemaDeVentas.DomainEntities\obj\Debug\net6.0\ref\SistemaDeVentas.DomainEntities.dll

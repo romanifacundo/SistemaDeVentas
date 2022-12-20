@@ -24,7 +24,7 @@ namespace SistemaDeVentas.WebApi.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            ICollection<Producto> listaProductos = await _productsRepository.getAllAsync();
+            ICollection<Producto> listaProductos = await _productsRepository.GetAllAsync();
 
             return Ok(listaProductos); 
         }

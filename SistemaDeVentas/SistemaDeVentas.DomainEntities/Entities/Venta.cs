@@ -22,8 +22,9 @@ namespace SistemaDeVentas.DomainEntities.Entities
         [Required]
         public decimal Total { get; set; }
 
-        
         public int ClienteId { get; set; }
+
+        [ForeignKey("ClienteId")]
         public Cliente cliente { get; set; }
 
     }
