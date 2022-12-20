@@ -10,5 +10,9 @@ namespace SistemaDeVentas.Application.ServicesContracts
     public interface IVentaService
     {
         Task<ICollection<Venta>> GetAllAsync();
+
+        Task<Venta> GetIdAsync(int id);
+
+        Task AddAsync(Venta obj);
     }
 }

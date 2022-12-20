@@ -12,5 +12,7 @@ namespace SistemaDeVentas.Infraestructure.RepositoriesContracts
         Task<ICollection<Venta>> GetAllAsync();
 
         Task<Venta> GetIdAsync(int id);
+
+        Task AddAsync(Venta obj);
     }
 }

@@ -22,5 +22,23 @@ namespace SistemaDeVentas.Application.Services
         {
             return _ventaRepository.GetAllAsync();
         }
+
+        public async Task<Venta> GetIdAsync(int id)
+        {
+            if (id != null)
+            {
+                var venta = await _ventaRepository.GetIdAsync(id);
+                return venta;
+            }
+            else
+            {
+                throw new Exception("Is Null");
+            }
+        }
+
+        public Task AddAsync(Venta obj)
+        {
+            return _ventaRepository.AddAsync(obj); 
+        }
     }
 }

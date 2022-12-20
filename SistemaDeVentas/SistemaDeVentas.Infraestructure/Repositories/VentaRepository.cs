@@ -31,5 +31,19 @@ namespace SistemaDeVentas.Infraestructure.Repositories
 
             return venta;
         }
+
+        public async Task AddAsync(Venta obj)
+        {
+            var nuevaVenta = new Venta()
+            {
+              
+                Fecha = obj.Fecha,
+                Total = obj.Total,
+                
+            };
+
+            await _context.Ventas.AddAsync(nuevaVenta);
+            await _context.SaveChangesAsync();
+        }
     }
 }
