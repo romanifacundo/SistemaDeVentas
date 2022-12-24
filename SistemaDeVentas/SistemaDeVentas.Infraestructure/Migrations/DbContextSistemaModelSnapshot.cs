@@ -113,8 +113,7 @@ namespace SistemaDeVentas.Infraestructure.Migrations
                     b.Property<int>("ClienteId")
                         .HasColumnType("int");
 
-                    b.Property<DateTime?>("Fecha")
-                        .IsRequired()
+                    b.Property<DateTime>("Fecha")
                         .HasColumnType("datetime2");
 
                     b.Property<decimal>("Total")
@@ -148,13 +147,13 @@ namespace SistemaDeVentas.Infraestructure.Migrations
 
             modelBuilder.Entity("SistemaDeVentas.DomainEntities.Entities.Venta", b =>
                 {
-                    b.HasOne("SistemaDeVentas.DomainEntities.Entities.Cliente", "cliente")
+                    b.HasOne("SistemaDeVentas.DomainEntities.Entities.Cliente", "Cliente")
                         .WithMany()
                         .HasForeignKey("ClienteId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("cliente");
+                    b.Navigation("Cliente");
                 });
 #pragma warning restore 612, 618
         }

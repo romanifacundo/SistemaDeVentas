@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SistemaDeVentas.DomainEntities.Entities;
+using SistemaDeVentas.DomainEntities.EntityDTO;
 using SistemaDeVentas.Infraestructure.Context;
 using SistemaDeVentas.Infraestructure.RepositoriesContracts;
 using System;
@@ -32,18 +33,19 @@ namespace SistemaDeVentas.Infraestructure.Repositories
             return venta;
         }
 
-        public async Task AddAsync(Venta obj)
+        public async Task AddAsync(VentaDTO ventaDTO)
         {
             var nuevaVenta = new Venta()
             {
-              
-                Fecha = obj.Fecha,
-                Total = obj.Total,
-                
+
+                Fecha = ventaDTO.Fecha,
+                Total = ventaDTO.Total,
+                ClienteId = ventaDTO.ClienteId,
+
             };
 
-            await _context.Ventas.AddAsync(nuevaVenta);
-            await _context.SaveChangesAsync();
+            _context.Ventas.AddAsync(nuevaVenta);
+            _context.SaveChangesAsync();
         }
     }
 }

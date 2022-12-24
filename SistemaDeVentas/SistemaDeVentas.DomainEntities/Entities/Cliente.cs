@@ -21,8 +21,8 @@ namespace SistemaDeVentas.DomainEntities.Entities
         [Required]
         public string? Apellido { get; set; }
 
-        [Required]
-        public string? Email { get; set; }
+        [Required , EmailAddress]
+        public string? Email { get; set; } 
     
     }
 }

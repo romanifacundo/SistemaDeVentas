@@ -17,15 +17,14 @@ namespace SistemaDeVentas.DomainEntities.Entities
         public int Id { get; set; }
 
         [Required]
-        public DateTime? Fecha { get; set; }
+        public DateTime Fecha { get; set; }
 
         [Required]
         public decimal Total { get; set; }
 
         public int ClienteId { get; set; }
 
-        [ForeignKey("ClienteId")]
-        public Cliente cliente { get; set; }
+        public Cliente Cliente { get; set; }
 
     }
 }

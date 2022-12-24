@@ -1,5 +1,6 @@
 ﻿using SistemaDeVentas.Application.ServicesContracts;
 using SistemaDeVentas.DomainEntities.Entities;
+using SistemaDeVentas.DomainEntities.EntityDTO;
 using SistemaDeVentas.Infraestructure.Repositories;
 using SistemaDeVentas.Infraestructure.RepositoriesContracts;
 using System;
@@ -36,9 +37,9 @@ namespace SistemaDeVentas.Application.Services
             }
         }
 
-        public Task AddAsync(Venta obj)
+        public Task AddAsync(VentaDTO ventaDTO)
         {
-            return _ventaRepository.AddAsync(obj); 
+            return _ventaRepository.AddAsync(ventaDTO);
         }
     }
 }

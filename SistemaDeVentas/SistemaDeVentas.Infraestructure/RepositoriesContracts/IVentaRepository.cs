@@ -1,4 +1,5 @@
 ﻿using SistemaDeVentas.DomainEntities.Entities;
+using SistemaDeVentas.DomainEntities.EntityDTO;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,6 @@ namespace SistemaDeVentas.Infraestructure.RepositoriesContracts
 
         Task<Venta> GetIdAsync(int id);
 
-        Task AddAsync(Venta obj);
+        Task AddAsync(VentaDTO ventaDTO);
     }
 }

@@ -1,7 +1,10 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using SistemaDeVentas.Application.ServicesContracts;
 using SistemaDeVentas.DomainEntities.Entities;
+using SistemaDeVentas.DomainEntities.EntityDTO;
+using SistemaDeVentas.Infraestructure.Context;
 
 namespace SistemaDeVentas.WebApi.Controllers
 {
@@ -11,13 +14,13 @@ namespace SistemaDeVentas.WebApi.Controllers
     {
         private readonly IVentaService _ventaService;
 
-        public VentaController(IVentaService ventaService)
+        public VentaController(IVentaService ventaService, DbContextSistema context)
         {
             _ventaService = ventaService;
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetVentas() 
+        public async Task<IActionResult> GetVentas()
         {
             var ventas = await _ventaService.GetAllAsync();
             return Ok(ventas);
@@ -31,12 +34,12 @@ namespace SistemaDeVentas.WebApi.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CrearVenta(Venta obj) 
+        public async Task<ActionResult> CrearVenta(VentaDTO ventaDTO)
         {
-            if(obj.Id != 0)
+            if (ventaDTO == null)
             {
-                var nuevaVenta = _ventaService.AddAsync(obj);
-                return Ok(nuevaVenta);
+                _ventaService.AddAsync(ventaDTO);
+                return Ok(ventaDTO);
             }
             else
             {
