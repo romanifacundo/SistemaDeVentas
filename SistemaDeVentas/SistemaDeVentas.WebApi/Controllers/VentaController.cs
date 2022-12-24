@@ -36,10 +36,10 @@ namespace SistemaDeVentas.WebApi.Controllers
         [HttpPost]
         public async Task<ActionResult> CrearVenta(VentaDTO ventaDTO)
         {
-            if (ventaDTO == null)
+            if (ventaDTO != null)
             {
-                _ventaService.AddAsync(ventaDTO);
-                return Ok(ventaDTO);
+                await _ventaService.AddAsync(ventaDTO);
+                return Ok();
             }
             else
             {

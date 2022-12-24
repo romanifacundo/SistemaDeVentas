@@ -22,8 +22,8 @@ namespace SistemaDeVentas.Infraestructure.Repositories
         }
 
         public async Task<ICollection<Venta>> GetAllAsync()
-        {
-            return await _context.Ventas.ToListAsync();
+        { 
+            return _context.Ventas.Include(v => v.Cliente).ToList();  
         }
 
         public async Task<Venta> GetIdAsync(int id)
@@ -44,8 +44,8 @@ namespace SistemaDeVentas.Infraestructure.Repositories
 
             };
 
-            _context.Ventas.AddAsync(nuevaVenta);
-            _context.SaveChangesAsync();
+            await _context.Ventas.AddAsync(nuevaVenta);
+            await _context.SaveChangesAsync();
         }
     }
 }
