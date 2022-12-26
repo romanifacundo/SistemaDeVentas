@@ -15,5 +15,7 @@ namespace SistemaDeVentas.Infraestructure.RepositoriesContracts
         Task<Venta> GetIdAsync(int id);
 
         Task AddAsync(VentaDTO ventaDTO);
+
+        Task DeleteAsycn(int id);
     }
 }

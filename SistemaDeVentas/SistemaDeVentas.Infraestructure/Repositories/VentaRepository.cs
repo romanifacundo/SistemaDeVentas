@@ -47,5 +47,13 @@ namespace SistemaDeVentas.Infraestructure.Repositories
             await _context.Ventas.AddAsync(nuevaVenta);
             await _context.SaveChangesAsync();
         }
+
+        public async Task DeleteAsycn(int id)
+        {
+            var venta =  _context.Ventas.Where(v => v.Id == id).Select(v => v).FirstOrDefault();
+
+            _context.Ventas.Remove(venta);
+            _context.SaveChanges();
+        }
     }
 }

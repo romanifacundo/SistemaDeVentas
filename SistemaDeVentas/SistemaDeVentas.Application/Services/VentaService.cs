@@ -41,5 +41,17 @@ namespace SistemaDeVentas.Application.Services
         {
             return _ventaRepository.AddAsync(ventaDTO);
         }
+
+        public async Task DeleteAsycn(int id)
+        {
+            if (id != 0)
+            {
+                await _ventaRepository.DeleteAsycn(id);
+            }
+            else
+            {
+                throw new Exception("Venta No Existente");
+            }
+        }
     }
 }

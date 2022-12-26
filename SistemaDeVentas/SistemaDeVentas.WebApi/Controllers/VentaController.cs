@@ -34,7 +34,7 @@ namespace SistemaDeVentas.WebApi.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> CrearVenta(VentaDTO ventaDTO)
+        public async Task<ActionResult> CrearVenta([FromBody] VentaDTO ventaDTO)
         {
             if (ventaDTO != null)
             {
@@ -45,6 +45,16 @@ namespace SistemaDeVentas.WebApi.Controllers
             {
                 return BadRequest();
             }
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteVenta(int id)
+        {
+
+            await _ventaService.DeleteAsycn(id);
+            return Ok();
+
+
         }
     }
 }
